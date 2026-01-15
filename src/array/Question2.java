@@ -1,4 +1,5 @@
 //Given a sorted array and a target, find 1-based indices of two numbers whose sum equals target.
+package array;
 public class Question2 {
     public static int[] twoSum(int[] nums, int target) {
         int l = 0, r = nums.length - 1;
