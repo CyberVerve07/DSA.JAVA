@@ -1,4 +1,4 @@
-public class Question11 {
+public class Heap {
     //Same Index Sum of Two Arrays
     //
     //arr1 = {1, 2, 3}

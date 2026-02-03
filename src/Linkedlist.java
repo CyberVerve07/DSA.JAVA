@@ -1,4 +1,4 @@
-public class Question10 {
+public class Linkedlist {
     //Find second largest element without sorting
     //Second Largest Element (without sorting)
         public static void main(String[] args) {
