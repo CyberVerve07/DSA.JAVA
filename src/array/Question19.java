@@ -1,6 +1,3 @@
-//Given a Binary Search Tree (BST) aur ek value val,
-//agar node exist karti hai → us subtree ka root return karo,
-//warna → null.
 // Tree node definition
 class TreeNode {
     int val;
@@ -35,11 +32,11 @@ class Solution {
     }
 }
 
-// Main class (entry point)
-public class Main {
+// Main class (ENTRY POINT)
+class Main {
     public static void main(String[] args) {
 
-        // BST bana rahe hain
+        // BST create kar rahe hain
         TreeNode root = new TreeNode(4);
         root.left = new TreeNode(2);
         root.right = new TreeNode(7);
@@ -56,4 +53,3 @@ public class Main {
         }
     }
 }
-
