@@ -1,6 +1,6 @@
 package stack;
 import java.util.Stack;
-public class PRoblem4 {
+public class Problem4 {
     public static void main(String[] args) {
         String str = "hello";
         Stack<Character> stack = new Stack<>();
