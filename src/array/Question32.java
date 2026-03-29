@@ -1,6 +1,8 @@
+package array;
+
 import java.util.*;
 
-public class MediumProblems {
+public class Question32 {
     
     // ============================================
     // Problem 1: Two Sum II (Sorted Array)
