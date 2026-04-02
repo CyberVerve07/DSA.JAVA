@@ -6,10 +6,11 @@ import java.util.Arrays;
  * Yeh class ek sorted array se duplicates ko in-place remove karti hai
  * aur nayi length return karti hai.
  */
- class RemoveDuplicates {
+class RemoveDuplicates {
 
     /**
-     * Array se duplicate elements hata kar nayi length return karta hai.
+     * Array se duplicate elements hata kar nayi length return karta hai
+     * 
      * @param nums Sorted integer array jismein duplicates ho sakte hain.
      * @return Duplicates hataane ke baad array ki length.
      */
@@ -26,7 +27,8 @@ import java.util.Arrays;
         for (int j = 1; j < nums.length; j++) {
             // Agar 'j' wali element 'i' wali se alag hai, toh nayi unique element mili.
             if (nums[j] != nums[i]) {
-                // 'i' ko agle position par le jao (kayunki nayi jagah milegi unique element ke liye)
+                // 'i' ko agle position par le jao (kayunki nayi jagah milegi unique element ke
+                // liye)
                 i++;
                 // Us nayi unique element ko 'i' ki nayi position par copy karo
                 nums[i] = nums[j];
@@ -44,7 +46,7 @@ import java.util.Arrays;
      */
     public static void main(String[] args) {
         // Test Case 1
-        int[] nums1 = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+        int[] nums1 = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
         System.out.println("--- Test Case 1 ---");
         System.out.println("Original Array: " + Arrays.toString(nums1));
 
@@ -59,9 +61,8 @@ import java.util.Arrays;
         System.out.println("]");
         System.out.println(); // Empty line for readability
 
-
         // Test Case 2
-        int[] nums2 = {1, 1, 2};
+        int[] nums2 = { 1, 1, 2 };
         System.out.println("--- Test Case 2 ---");
         System.out.println("Original Array: " + Arrays.toString(nums2));
 
