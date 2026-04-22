@@ -43,7 +43,7 @@ public class Question4 {
         System.out.println("Input: " + input1 + " -> Output: " + solve(input1)); // Expected: a#bb
 
         String input2 = "abcabc";
-        System.out.println("Input: " + input2 + " -> Output: " + solve(input2)); // Expected: abc###
+        System.out.println("Input: " + input2 + " -> Output: " + solve(input2)); // Expected: aaabc#
 
         String input3 = "zzxx";
         System.out.println("Input: " + input3 + " -> Output: " + solve(input3)); // Expected: z#x#
