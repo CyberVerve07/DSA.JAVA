@@ -1,10 +1,19 @@
 package stack;
+
 import java.util.Stack;
 
+/**
+ * Problem 3: Largest Rectangle in Histogram.
+ * Given an array of integers heights representing the histogram's bar height 
+ * where the width of each bar is 1, find the area of the largest rectangle in the histogram.
+ */
+public class Problem3 {
 
-
- class LargestRectangleHistogram {
-
+    /**
+     * Calculates the largest rectangle area using a monotonic stack.
+     * @param heights Array of bar heights.
+     * @return The maximum area.
+     */
     public static int largestRectangleArea(int[] heights) {
         Stack<Integer> stack = new Stack<>();
         int maxArea = 0;
@@ -24,6 +33,11 @@ import java.util.Stack;
     }
 
     public static void main(String[] args) {
-        System.out.println(largestRectangleArea(new int[]{2,1,5,6,2,3})); // 10
+        int[] heights = {2, 1, 5, 6, 2, 3};
+        int result = largestRectangleArea(heights);
+        
+        System.out.println("Histogram heights: [2, 1, 5, 6, 2, 3]");
+        System.out.println("Largest Rectangle Area: " + result); // Expected: 10
     }
 }
+

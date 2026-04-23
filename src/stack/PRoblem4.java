@@ -1,8 +1,18 @@
 package stack;
+
 import java.util.Stack;
+
+/**
+ * Problem 4: Reverse a String using a Stack.
+ */
 public class Problem4 {
-    public static void main(String[] args) {
-        String str = "hello";
+
+    /**
+     * Reverses a string using the LIFO property of a Stack.
+     * @param str The string to be reversed.
+     * @return The reversed string.
+     */
+    public static String reverseString(String str) {
         Stack<Character> stack = new Stack<>();
 
         // Step 1: Push characters into stack
@@ -16,6 +26,20 @@ public class Problem4 {
             reversed.append(stack.pop());
         }
 
-        System.out.println(reversed.toString());
+        return reversed.toString();
+    }
+
+    public static void main(String[] args) {
+        String input = "hello";
+        String output = reverseString(input);
+
+        System.out.println("Original: " + input);
+        System.out.println("Reversed: " + output);
+        
+        // Additional Test
+        String input2 = "antigravity";
+        System.out.println("Original: " + input2);
+        System.out.println("Reversed: " + reverseString(input2));
     }
 }
+
