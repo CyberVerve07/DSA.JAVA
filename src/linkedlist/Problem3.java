@@ -55,4 +55,6 @@ public class Problem3 {
         ListNode mid2 = middleNode(head2);
         System.out.println("Middle element of List 2 is: " + mid2.val);
     }
+
+    
 }
