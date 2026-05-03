@@ -38,7 +38,13 @@ public class Question42 {
      * @return true if duplicates exist, false otherwise
      */
     public static boolean containsDuplicate(int[] nums) {
-        // TODO: Implement the logic here
+        Set<Integer> seen = new HashSet<>();
+        for (int num : nums) {
+            if (seen.contains(num)) {
+                return true;
+            }
+            seen.add(num);
+        }
         return false;
     }
 
